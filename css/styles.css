@@ -1,0 +1,10 @@
+body{
+    font-family: 'Prompt', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-pic{
+    width: 400px;
+}
