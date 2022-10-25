@@ -4,7 +4,83 @@ body{
     margin: 0;
     padding: 0;
 }
+/*main-end*/
 
 .logo-pic{
-    width: 400px;
+    width: 75px;
+}
+
+.header-section {
+    background-color: rgb(97, 30, 30);
+}
+
+.header-top {
+    display: flex;
+    padding: 16px 150px 0px 150px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(45, 53, 53);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    margin: 0px;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color:#F9FAF8;
+}
+
+.logo {
+    padding: 0px
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*padding: 300px 150px 300px 150px;*/
+    position: relative;
+    border-color: aqua;
+    border-style: solid;
+    /*background-image: url(../imgs/solis-homepage.jpg);
+    background-repeat: no-repeat;
+    background-size: 1300px 600px;*/
+}
+
+.header-bottom img{
+width: 100%;
+height: 100%;
+filter:blur(px)
+}
+
+.header-des {
+    color: #F9FAF8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: Flex-start;
+    /*background-color: grey;*/
+    backdrop-filter: blur(2px);
+    box-shadow: 25px;
+    position: absolute;
+}
+
+.business-name {
+color: #F9FAF8;
+font-size: 48px;
+}
+
+.business-des {
+    color: #F9FAF8;
+    font-size: 18px;
+}
+
+.plan-section {
+    border-color: red;
+    border-style: solid;
 }
