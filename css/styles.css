@@ -47,13 +47,13 @@ a {
     align-items: center;
     height: auto;
     width: auto;
-    /*padding: 300px 150px 300px 150px;*/
-    position: relative;
+    padding: 300px 150px 300px 150px;
+    /*position: relative;*/
     border-color: aqua;
     border-style: solid;
-    /*background-image: url(../imgs/solis-homepage.jpg);
+    background-image: url(../imgs/solis-homepage.jpg);
     background-repeat: no-repeat;
-    background-size: 1300px 600px;*/
+    background-size: 100% 100%;
 }
 
 button {
@@ -81,12 +81,12 @@ filter:blur(px)
     backdrop-filter: blur(2px);
     box-shadow: 95px;
     background-color: rgba(0,0,0,0.3);
-    max-width: 45%;
+    max-width: 100%;
     max-height: 35%;
     border-style: solid;
     border-color:#F9FAF8;
     border-radius: 8px;
-    position: absolute;
+    /*position: absolute;*/
 }
 
 .business-name {
@@ -124,7 +124,7 @@ font-size: 48px;
     gap: 30px;
 }
 
-.plan-img {
+.plan-img, .plan-img-2, .plan-img-3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -136,6 +136,16 @@ font-size: 48px;
     background-size: 100% 100%;
     padding: 20px 20px 20px 20px;
     transition: all .8s ease;
+}
+
+.plan-img-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.082), rgba(0, 0, 0, 0.082)),
+        url(../imgs/layout.jpg);
+}
+
+.plan-img-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.082), rgba(0, 0, 0, 0.082)),
+        url(../imgs/execute.jpg);
 }
 
 .addon-number {
