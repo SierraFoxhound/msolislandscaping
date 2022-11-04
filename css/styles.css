@@ -136,6 +136,7 @@ font-size: 48px;
     background-size: 100% 100%;
     padding: 20px 20px 20px 20px;
     transition: all .8s ease;
+    flex: 1;
 }
 
 .plan-img-2 {
@@ -164,4 +165,17 @@ font-size: 48px;
     font-weight: 700;
     margin: 0 0 10px;
     color: white;
+}
+
+.plan-des-img-container {
+    display: flex;
+}
+
+.plan-des {
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-phase-title {
+    font-size: 36px;
 }
