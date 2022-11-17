@@ -107,7 +107,7 @@ font-size: 48px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 70px 150px 100px 150px;
+    padding: 70px 100px 100px 100px;
 }
 
 .plan-title {
@@ -167,15 +167,151 @@ font-size: 48px;
     color: white;
 }
 
-.plan-des-img-container {
+.plan-des-img-container { /*1 main container start*/
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 70px 150px 100px 150px;
+    gap: 80px;
 }
 
-.plan-des {
+.sub-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #baa08f;
+    text-transform: uppercase;
+    display: block;
+    margin: 0px 0px 7px 0px;
+}
+
+.title h1 {
+    color:#333333;
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 700;
+    /*display: block;
+    margin-inline-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;*/
+}
+
+.plan-des { /*1a container for title and description*/
     display: flex;
     flex-direction: column;
+    flex: 1;
+    max-width: 673px
 }
 
-.plan-phase-title {
-    font-size: 36px;
+.plan-phase-title { /*1a-1 sub title*/
+    font-size: 50px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.plan-phase-des { /*1a-2 sub description*/
+font-size: 18px
+}
+
+.plan-diagram img { /*1b*/
+    flex: 1;
+    width: 600px;
+    height: 400px;
+}
+/*end of plan section*/
+
+.services-section { /*Main container for services*/
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    padding: 70px 150px 100px 150px;
+}
+
+.service-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-title {
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 700;
+    color: #333333;
+    margin: 0 0 3px;
+}
+
+hr {
+    opacity: 0.3;
+    width: 275px;
+    height: 1px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #666;
+}
+
+.service-description p {
+    font-size: 18px;
+}
+
+/*Service container end*/
+
+.service-moodle-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap:wrap;
+}
+
+.service-moodle {
+    background-color: #ffffff;
+    display: flex;
+    gap: 4px;
+    padding: 38px 20px 36px 20px;
+    flex: 1;
+}
+
+.icon {
+    margin: 0px;
+    padding: 0px;
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+}
+
+.moodle-box {
+    padding: 0px 25px 0px 25px;
+}
+
+.moodle-title {
+    font-size: 22px;
+        line-height: 32px;
+        font-weight: 700;
+}
+
+.moodle-des {
+    color: #666666;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin: 0 0 26px;
+    line-height: 1.8;
+}
+/* TODO fix link color*/
+.moodle-link .a {
+    color:#333333;
+}
+
+.a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.a:hover {
+    color:#333333;
 }
