@@ -349,3 +349,7 @@ a:hover {
     flex-direction: column;
     list-style:square;
 }
+
+.footer-list .footer-contact {
+    list-style: none;
+}
