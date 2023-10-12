@@ -4,12 +4,16 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        
         <title>M.Solis Landscaping</title>
-        <!--Bootstrap css-->
+        <!--Main Stylesheet-->
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <!--Bootstrap Css-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <!--Main Stylesheet-->
+        <!--Bootstrap Icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <!--Google Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
@@ -57,10 +61,37 @@
                         </div>
                     </div>
                 </nav><!--End of navbar-->
+
                 <!--Start of header bottom(hero)-->
                 <section class="hero">
 
+                    <div class="hero__overlay"></div>
+
+                    <video playsinline="playsinline" autoplay="autoplay" muted="muted"
+                    loop="loop" loading="lazy" class="hero__video">
+                    <source src="./imgs/hero-video.mp4" type="video/mp4">
+
+                    </video>
+
+                    <div class="hero__content h-100 container-custom position-relative">
+
+                        <div class="d-flex h-100 align-items-center hero-content-width">
+                            <div class="text-white">
+                                <h1 class=".hero__heading fw-bold mb-4">Creating beautiful Landscapes and amazing experiences.</h1>
+                                <p class="lead mb-4">Downey's number one choice for Lawn Care, Landscape, Irrigation, welding & Tree Solutions.</p>
+                                    <a href="#" class="mt-2 btn btn-lg btn-outline-light" role="button">
+                                        Contact Us
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#scroll-down" class="hero__scroll-btn">
+                        Learn more <i class="bi bi-arrow-down-short"></i>
+                    </a>
+
                 </section>
+                
                 <!--OLD HERO DIV<div class="header-bottom">
                     *Comment out<img src="imgs/solis-homepage.jpg">
                     <div class="header-des">
@@ -77,11 +108,14 @@
                 </div>
                 -->
             </div>
+
             <!--end of header section-->
+
+            <a id="scroll-down"></a>
             <!--start of Execution section-->
             <div class="plan-section">
                 <div class="plan-title"><h3>Planning</h3></div>
-                <div class="plan-steps">
+                <div class="plan-steps ">
                     <div class="plan-img">
                         <div class="addon-number">01</div>
                         <div class="addon-content"><h3 class="title">Design</h3></div>
@@ -97,14 +131,16 @@
                 </div>
                 <!--End of three images-->
                 <!--Start of company decription-->
-                <div class="plan-des-img-container">
+                <div class="plan-des-img-container custom-container">
                     <div class="plan-des">
                         <span class="sub-text">Exterior Design</span>
                         <h1 class="title">Maintenence & Constructuon</h1>
                         <div class="plan-phase-title">MSLS Construction</div>
                         <div class="plan-phase-des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit unde dolorem placeat, iure aliquam ducimus vel quae dolores laborum cupiditate exercitationem repudiandae eum reprehenderit commodi nesciunt expedita quos eveniet facere.</div>
                     </div>
-                    <div class="plan-diagram"><img src="imgs/plan-des.jpg"></div>
+                    <div class="plan-diagram img-fluid">
+                        <img src="imgs/plan-des.jpg" alt="design diagram" width="600px" height="400px">
+                    </div> <!--Old:plan-diagram-->
                 </div>
             </div>
             <!--End of execution section-->
@@ -159,7 +195,24 @@
             crossorigin="anonymous"></script>
     </body>
     <!--TODO: Add a tags and update header names with boldness (div tags)-->
-    <footer class="footer-sec">
+    <footer class="footer bg-white text-white">
+        <div class="container-custom d-flex justify-content-between align-items-center py-3 border-highlight">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="me-2 text-muted text-decoration-none">
+                    <i class="bi bi-minecart-loaded"></i>
+                    <span>&copy; 2023 M Solis Landscaping</span>
+                </a>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex text-white">
+                <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-twitter"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-instagram"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-facebook"></i></a></li>
+            </ul>
+
+        </div>
+    </footer>
+    <!--<footer class="footer-sec">
         <div class="footer-top">
             <div class="footer-img">
                 <img class="footer-logo" src="/imgs/NEW_LOGO.png">
@@ -187,5 +240,5 @@
             </div>
 
         </div>
-    </footer>
+    </footer>-->
 </html>
