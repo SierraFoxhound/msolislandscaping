@@ -205,12 +205,13 @@ font-size: 48px;
     width: 311px;
     height: 302px;
     border-style: solid;
-    border-color:rgb(97, 30, 30);
+    border-color:var(--primary-color);
     background-image: linear-gradient(rgba(0, 0, 0, 0.082), rgba(0, 0, 0, 0.082)), url(../imgs/layout-solis.jpeg);
     background-size: 100% 100%;
     padding: 20px 20px 20px 20px;
     transition: all .8s ease;
     flex: 1;
+    border-radius: 5px;
 }
 
 .plan-img-2 {
@@ -227,7 +228,7 @@ font-size: 48px;
     font-size: 120px;
     font-weight: 400;
     line-height: 44px;
-    color: #baa08f;
+    color: whitesmoke;
     font-family: 'Prompt', sans-serif;
     text-align: right;
     padding: 0 20px 0 0;
@@ -255,7 +256,7 @@ font-size: 48px;
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
-    color: #baa08f;
+    color: var(--primary-color-highlight);
     text-transform: uppercase;
     display: block;
     margin: 0px 0px 7px 0px;
@@ -367,6 +368,7 @@ hr {
     flex: 1;
     box-shadow: 0px 0px 40px 0px #eee;
     max-width: 20em;
+    border-radius: 5px;
 }
 
 .icon {
@@ -407,8 +409,8 @@ hr {
     text-decoration: none;
 }
 
-a:hover {
-    color:#baa08f;
+.moodle-link a:hover {
+    opacity: 50%;
 }
 /*Link color end*/
 
@@ -458,6 +460,93 @@ a:hover {
     color: rgba(255, 255, 255, 0.75);
 }
 
-.footer .border-highlight {
-    border-top: 1px solid var(--primary-color-highlight)
+/*gardening html*/
+
+/*summary section*/
+
+.summary-container {
+    padding: 7rem 0 5rem 0;
+}
+.gardening-icon {
+    padding: 0px 20px;
+}
+
+.services-header{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+/*Turf Section*/
+.turf-section {
+    flex-wrap: wrap;
+    padding: 20px 0 10rem 0;
+}
+
+.turf-img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    flex-shrink: 1;
+}
+
+/*coursel section*/
+
+
+
+.carousel-item {
+    height: 32rem;
+    background: #777;
+    color: white;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size:cover;
+}
+
+/*Landscape section*/
+/*Single-section*/
+
+.single-section-gr {
+    padding: 4rem 0 2rem 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+}
+
+.single-section {
+    padding: 4rem 0 2rem 0;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.single-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.text-box {
+    max-width: 600px;
+
+}
+
+/*Area of Operations section*/
+
+.service-number {
+    font-weight: 300;
+}
+
+.service-number a {
+    font-size: 40px;
+    color: #5d7d34;
+    text-decoration: none;
 }

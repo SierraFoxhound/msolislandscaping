@@ -46,7 +46,7 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Gardening</a></li>
+                                        <li><a class="dropdown-item" href="./gardening.html">Gardening</a></li>
                                         <li><a class="dropdown-item" href="#">Irrigation</a></li>
                                         <li><a class="dropdown-item" href="#">Wielding</a></li>
                                     </ul>
@@ -114,7 +114,7 @@
             <a id="scroll-down"></a>
             <!--start of Execution section-->
             <div class="plan-section">
-                <div class="plan-title"><h3>Planning</h3></div>
+                <div class="plan-title"><h2>Planning</h2></div>
                 <div class="plan-steps ">
                     <div class="plan-img">
                         <div class="addon-number">01</div>
@@ -150,7 +150,7 @@
                 <div class="service-intro">
                     <h2 class="services-title">SERVICES</h2>
                     <hr style="border: none;">
-                    <div class="sercive-description">
+                    <div class="service-description">
                         <p style="text-align:center">
                         Our Landscaping services offer a range of services. We offer
                         Gardening/maintenence, irrigation, and wielding.
@@ -164,7 +164,7 @@
                         <div class="moodle-box">
                             <h3 class="moodle-title">Gardening</h3>
                             <div class="moodle-des">This is a decscription</div>
-                            <div class="moodle-link"><a href="#">More Info</a></div>
+                            <div class="moodle-link"><a href="./gardening.html">More Info</a></div>
                         </div>
                     </div>
                     <!--irrigation-->
@@ -187,6 +187,30 @@
                     </div>
                 </div>
            </div> <!--Main Service Section end-->
+
+           <div class="container text-center py-5">
+                <div class="row align-items-center">
+                    <div><h2 class="services-title">CUSTOMERS</h2></div>
+                    <div class="img-1 col">
+                        <img src="./imgs/Tempo Cantina - Mexican Food with A Twist - Meet Tempo By Jorge C.jpg" alt="Tempo Cantina" width="170" height="200">
+                    </div>
+                    <div class="img-2 col">
+                        <img src="./imgs/About Us - Logos  CENTURY 21.png" alt="Tempo Cantina" width="250" height="50">
+                    </div>
+                    <div class="img-3 col">
+                        <img src="./imgs/SA Recycling - Crunchbase Company Profile  Funding.png" alt="Tempo Cantina" width="170" height="200">
+                    </div>
+                    <div class="img-4 col">
+                        <img src="./imgs/Amapola Market  Downey CA.png" alt="Amapola" width="200" height="180">
+                    </div>
+                    <div class="img-5 col">
+                        <img src="./imgs/YMCA USA Black Logo transparent PNG - StickPNG.png" alt="YMCA" height="90" width="115">
+                    </div>
+                    <div class="img-6 col">
+                        <img src="./imgs/City Mission Statement  Values  City of Downey, CA.png" alt="Downey Emblem" height="120" width="120">
+                    </div>
+                </div>
+           </div>
            
         </main>
         <!--Bootstrap js Bundle-->
@@ -195,50 +219,62 @@
             crossorigin="anonymous"></script>
     </body>
     <!--TODO: Add a tags and update header names with boldness (div tags)-->
-    <footer class="footer bg-white text-white">
-        <div class="container-custom d-flex justify-content-between align-items-center py-3 border-highlight">
-            <div class="col-md-4 d-flex align-items-center">
-                <a href="/" class="me-2 text-muted text-decoration-none">
-                    <i class="bi bi-minecart-loaded"></i>
-                    <span>&copy; 2023 M Solis Landscaping</span>
+    <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 pb-3 mb-3 mt-5 border-top">
+            <div class="col mb-3">
+                <a href="/" class="d-flex align-items-center mb-3 link-body-emphisis text-decoration-none">
+                    <img class="footer-logo" src="/imgs/NEW_LOGO.png" alt="logo">
                 </a>
             </div>
-
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex text-white">
-                <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-twitter"></i></a></li>
-                <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-instagram"></i></a></li>
-                <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-facebook"></i></a></li>
-            </ul>
-
-        </div>
-    </footer>
-    <!--<footer class="footer-sec">
-        <div class="footer-top">
-            <div class="footer-img">
-                <img class="footer-logo" src="/imgs/NEW_LOGO.png">
-            </div>
-            <div class="footer-list">
-                <ul>
-                    <div class="footer-title">Services</div>
-                    <li>Gardening</li>
-                    <li>Irrigation</li>
-                    <li>Wielding</li>
+            <div class="col mb-3"></div>
+            <div class="col mb-3">
+                <h5>Services</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2 "><a href="./gardening.html" class="text-decoration-none link-dark link-opacity-50-hover">Gardening</a></li>
+                    <li class="nav-item mb-2 "><a href="#" class="text-decoration-none link-dark link-opacity-50-hover">Irrigation</a></li>
+                    <li class="nav-item mb-2 "><a href="#" class="text-decoration-none link-dark link-opacity-50-hover">Wielding</a></li><!--old a tag: nav-link p-0 text-body-secondary-->
                 </ul>
             </div>
-            <div class="footer-list">
-                <ul>
-                    <div class="footer-title">Portfolio</div>
-                    <li>Exterior work</li>
+            <div class="col mb-3">
+                <h5>Portfolio</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2 "><a href="#" class="text-decoration-none link-dark link-opacity-50-hover">Exterior Work</a></li>
                 </ul>
             </div>
-            <div class="footer-list">
-                <ul class="footer-contact">
-                    <div class="footer-title">Contact</div>
-                    <li><i class="fa-solid fa-phone"></i><a href="#"> (562)123-4567</a></li>
-                    <li><i class="fa-solid fa-envelope"></i> MSLS@gmail.com</li>
+            <div class="col mb-3">
+                <h5>Contact</h5>
+                <ul class="nav flex-column">
+                    <li>
+                        <a class="icon-link icon-link-hover text-decoration-none link-dark link-opacity-50-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg>
+                        (562)123-4567</a>
+                    </li>
+                    <li>
+                        <a class="icon-link icon-link-hover text-decoration-none link-dark link-opacity-50-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="mailto:m.solis@gmail.com">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                            </svg>
+                            
+                             MSLS@gmail.com
+                        </a>
+                    </li>
                 </ul>
             </div>
-
-        </div>
-    </footer>-->
+            <div class="d-flex flex-column flex-sm-row justify-content-between pt-4 mt-4 border-top">
+                <p>© 2023 M. Solis Landscaping,  All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3">
+                        <a class="link-body-emphasis" href="https://www.instagram.com/m.solislandscapingservice/">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 </html>
