@@ -534,6 +534,13 @@ hr {
     flex-wrap: wrap;
 }
 
+.single-container-extra {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 8rem;
+}
+
 .text-box {
     max-width: 600px;
 
