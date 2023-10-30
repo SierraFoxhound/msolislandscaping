@@ -552,8 +552,14 @@ hr {
     font-weight: 300;
 }
 
-.service-number a {
+.service-number a, .contact-us-title {
     font-size: 40px;
     color: #5d7d34;
     text-decoration: none;
+}
+
+/*Contact us section*/
+
+.container-padding {
+    padding: 8rem 0 6rem 0;
 }
