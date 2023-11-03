@@ -563,3 +563,8 @@ hr {
 .container-padding {
     padding: 8rem 0 6rem 0;
 }
+
+/*About us Section*/
+.about-green {
+    color: #5d7d34;
+}
